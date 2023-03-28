@@ -33,7 +33,7 @@ String& String::operator=(const char* other)
 
 String& String::operator=(String const& other)
 {
-	if (*this != other) {
+	if (*this != other) { //bez da iskam sravnih stoinostite vmesto adresite
 		delete[] str;
 		int len = strlen(other.str);
 		str = new char[len + 1];
